@@ -1,4 +1,4 @@
-package DAP;
+package BDNCPractica01;
 
 public interface DepartamentoDAO {
     void agregarDepartamento(int id, String nombre, String clave);

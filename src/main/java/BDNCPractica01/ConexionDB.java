@@ -1,4 +1,4 @@
-package DAP;
+package BDNCPractica01;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

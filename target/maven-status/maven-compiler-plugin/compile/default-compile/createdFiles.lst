@@ -1,1 +1,12 @@
-DAP/DAP.class
+BDNCPractica01/Main.class
+BDNCPractica01/ProductoTableModel.class
+BDNCPractica01/ProductoDAO.class
+BDNCPractica01/ConexionDB.class
+BDNCPractica01/DepartamentoDAO.class
+BDNCPractica01/ProductoPojo.class
+BDNCPractica01/IDAOGeneral.class
+BDNCPractica01/EmpleadoDAO.class
+BDNCPractica01/HibernateUtil.class
+BDNCPractica01/Departamento.class
+BDNCPractica01/Empleado.class
+BDNCPractica01/Producto.class

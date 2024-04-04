@@ -1,7 +1,7 @@
-package DAP;
+package BDNCPractica01;
 
 import java.sql.*;
-import DAP.ConexionDB;
+import BDNCPractica01.ConexionDB;
 
 public class Departamento implements DepartamentoDAO {
     private static Departamento instance;

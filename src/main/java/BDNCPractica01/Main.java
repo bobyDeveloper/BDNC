@@ -1,4 +1,4 @@
-package DAP;
+package BDNCPractica01;
 
 public class Main {
     
