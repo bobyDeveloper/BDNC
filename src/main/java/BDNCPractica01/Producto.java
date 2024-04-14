@@ -1,54 +1,72 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package BDNCPractica01;
 
+import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
+/**
+ *
+ * @author Ville
+ */
 @Entity
-public class Producto {
-
+@Table(name = "producto")
+public class Producto implements Serializable{
+    
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nombre;
-    private Double precio;
-    private Integer cantidad;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE,
+            generator = "producto_id_seq")
+    @SequenceGenerator(name = "producto_id_seq",
+            sequenceName = "producto_id_seq",
+            allocationSize = 1,
+            initialValue = 1)
+    @Column(name = "idproducto")
+    private long id;
+    @Column(name = "descripcion")
+    private String descripcion;
+    @Column(name="precio")
+    private double precioVenta;
+    @Column(name="costo")
+    private double precioCompra;
 
-    public Producto() {
-    }
-
-    // Getters y setters
-
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public Double getPrecio() {
-        return precio;
+    public double getPrecioVenta() {
+        return precioVenta;
     }
 
-    public void setPrecio(Double precio) {
-        this.precio = precio;
+    public void setPrecioVenta(double precioVenta) {
+        this.precioVenta = precioVenta;
     }
 
-    public Integer getCantidad() {
-        return cantidad;
+    public double getPrecioCompra() {
+        return precioCompra;
     }
 
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
+    public void setPrecioCompra(double precioCompra) {
+        this.precioCompra = precioCompra;
     }
+    
 }

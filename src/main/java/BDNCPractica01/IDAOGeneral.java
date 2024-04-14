@@ -8,12 +8,14 @@ import java.util.List;
 
 /**
  *
- * @author boby
+ * @author Ville
  */
-public interface IDAOGeneral<T, ID>{
-    public T buscarById(ID id);
-    List<T> buscarAll();
+public interface IDAOGeneral <T>{
+    
     public boolean guardar(T p);
-    public boolean modificar(T p);
-    public boolean eliminar(T p);    
+    public boolean actualizar(T p);
+    public boolean eliminar(T p);
+    public T findById(long id);
+    public List<T> findAll();
+    
 }

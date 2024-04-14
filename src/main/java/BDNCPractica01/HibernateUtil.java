@@ -9,10 +9,10 @@ import org.hibernate.cfg.Configuration;
 
 /**
  *
- * @author boby
+ * @author Ville
  */
 public class HibernateUtil {
-    
+
     private static final SessionFactory sessionFactory;
 
     static {
@@ -27,5 +27,5 @@ public class HibernateUtil {
     public static SessionFactory getSessionFactory() {
         return sessionFactory;
     }
-    
+
 }
