@@ -9,7 +9,6 @@ import org.hibernate.cfg.Configuration;
 
 /**
  *
- * @author Ville
  */
 public class HibernateUtil {
 

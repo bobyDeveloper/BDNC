@@ -4,10 +4,7 @@
  */
 package BDNCPractica01;
 
-/**
- *
- * @author Ville
- */
+
 public class Menu extends javax.swing.JFrame {
 
     /**
@@ -50,9 +47,9 @@ public class Menu extends javax.swing.JFrame {
 
         getContentPane().add(jDesktopPane1, java.awt.BorderLayout.CENTER);
 
-        jMenu1.setText("Inicio");
+        jMenu1.setText("Home");
 
-        jMenuItem1.setText("Salir");
+        jMenuItem1.setText("Exit");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
@@ -62,7 +59,7 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Operaciones");
+        jMenu2.setText("ProductosCRUD");
 
         jMenuItem2.setText("Productos");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {

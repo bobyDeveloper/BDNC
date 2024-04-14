@@ -15,7 +15,6 @@ import javax.persistence.Table;
 
 /**
  *
- * @author Ville
  */
 @Entity
 @Table(name = "producto")

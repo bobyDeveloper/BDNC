@@ -10,7 +10,6 @@ import java.sql.SQLException;
 
 /**
  *
- * @author Ville
  */
 public class Conexion {
     

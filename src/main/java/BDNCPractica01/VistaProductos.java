@@ -13,7 +13,6 @@ import org.hibernate.Transaction;
 
 /**
  *
- * @author Ville
  */
 public class VistaProductos extends javax.swing.JInternalFrame {
 

@@ -9,7 +9,6 @@ import java.util.List;
 
 /**
  *
- * @author Ville 
  */
 public abstract class ProductoTableModel<T> extends AbstractTableModel {
 

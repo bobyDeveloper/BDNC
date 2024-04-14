@@ -6,7 +6,6 @@ package BDNCPractica01;
 
 /**
  *
- * @author Ville
  */
 public class Main {
 
